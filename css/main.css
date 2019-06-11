@@ -1,12 +1,379 @@
 @import "./fonts.css";
 
+/* Variables */
+
+:root {
+    --orange: rgb(255, 90, 0);
+}
+
 /* General */
 
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
     font-family: "Exo";
     font-weight: 400;
+    overflow-x: hidden;
+}
+
+body {
+    /* position: relative; */
+}
+
+section {
+    overflow-x: hidden;
+}
+
+
+/* Scroll Bars */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/*  on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+.navbar {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    /* z-index: 10; */
+    top: 0;
+    transition: top 0.4s;
+    z-index: 10;
+}
+
+.navbar img {
+    padding-left: 20px;
+    width: 5%;
+}
+
+.navbar i {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    color: black;
+    font-size: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+
+.navbar i:hover {
+    font-size: 30px;
+}
+
+.logo-text {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.logo-text>div {
+    width: 1px;
+    height: 40px;
+    /* background-color: black; */
+    background-image: linear-gradient(rgba(109, 109, 109, 0), rgb(109, 109, 109), rgba(109, 109, 109, 0));
+    margin: 0 10px;
+}
+
+
+
+.logo-text h1 {
+    color: var(--orange);
+    font-family: "Expletus Sans";
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.logo-text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 20;
+    height: 0;
+    width: 100%;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.navbar-close {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    color: black;
+    font-size: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.navbar-close:hover {
+    font-size: 30px;
+}
+
+.navbar-overlay-line {
+    width: 5px;
+    height: 0;
+    background-color: black;
+    transition: 2s;
+    position: absolute;
+}
+
+.navbar-overlay>.navbar-overlay-line:nth-child(2) {
+    left: 5vw;
+}
+
+.navbar-overlay>.navbar-overlay-line:nth-child(3) {
+    right: 5vw;
+    bottom: 0;
+}
+
+.navbar-orange-line {
+    background-color: var(--orange);
+    width: 5px;
+    height: 80px;
+    position: absolute;
+}
+
+.navbar-overlay > .navbar-orange-line:nth-child(4) {
+    left: 5vw;
+    animation: menuOrangeLine1 4s ease infinite;
+}
+
+.navbar-overlay > .navbar-orange-line:nth-child(5) {
+    right: 5vw;
+    bottom: 0;
+    animation: menuOrangeLine2 4s ease infinite;
+}
+
+@keyframes menuOrangeLine1 {
+    from {top: 0px}
+    to {top: 100vh}
+}
+
+@keyframes menuOrangeLine2 {
+    from {bottom: 0}
+    to {bottom: 100vh}
+}
+
+
+
+
+
+.navbar-overlay-logo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    height: 100vh;
+}
+
+.navbar-overlay-heading {
+    text-align: center;
+    opacity: 0;
+    font-family: "Exo";
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 40px;
+    transition: 2s;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-overlay-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.navbar-overlay-menu>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0 30px;
+    border-left: 5px solid black;
+}
+
+.navbar-overlay-menu a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-family: "Expletus Sans";
+    border-left: 2px solid transparent;
+    transition: 0.6s;
+    position: relative;
+    left: -150%;
+    transition: 1s;
+}
+
+.navbar-overlay-menu a:hover {
+    padding-left: 20px;
+    color: var(--orange);
+    border-left: 2px solid rgb(109, 109, 109);
+}
+
+
+
+
+
+
+
+
+/* Home Landing Section */
+
+.landing-section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("../assets/images/backgrounds/home-landing-section.jpg");
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+#myVideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.landing-section h1 {
+    text-align: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    font-weight: 300;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.landing-section h1 span {
+    font-size: 50px;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+
+
+/* About Section */
+
+.about-section {
+    height: 100vh;
+    background-color: white;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about-section > div {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+}
+
+.about-section > div > div:nth-child(1) {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-section > div > div:nth-child(1) h1{
+    text-align: right;
+    font-weight: 700;
+    font-family: "Expletus Sans";
+    font-size: 100px;
+    border-right: 2px solid black;
+    padding-right: 50px;
+}
+
+.about-section > div > div:nth-child(2) {
+    padding: 5% 20% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-section > div > div:nth-child(2) span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-section .orange-div-line {
+    height: 2px;
+    width: 60%;
+    color: var(--orange);
+}
+
+.about-section .black-line {
+    height: 5px;
+    width: 20vw;
+    background-color: black;
+    position: absolute;
+}
+
+.about-section .black-line:nth-child(2) {
+    top: 10%;
+}
+
+.about-section .black-line:nth-child(3) {
+    right: 0;
+    top: 90%;
 }

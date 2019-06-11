@@ -58,25 +58,25 @@
 /* EXPLETUS SANS */
 
 @font-face {
-    font-family: Exo;
+    font-family: "Expletus Sans";
     src: url("./fonts/Expletus_Sans/ExpletusSans-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Exo;
+    font-family: "Expletus Sans";
     src: url("./fonts/Expletus_Sans/ExpletusSans-Medium.ttf ");
     font-weight: 500;
 }
 
 @font-face {
-    font-family: Exo;
+    font-family: "Expletus Sans";
     src: url("./fonts/Expletus_Sans/ExpletusSans-SemiBold.ttf");
     font-weight: 600;
 }
 
 @font-face {
-    font-family: Exo;
+    font-family: "Expletus Sans";
     src: url("./fonts/Expletus_Sans/ExpletusSans-Bold.ttf");
     font-weight: 700;
 }

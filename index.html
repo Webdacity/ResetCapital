@@ -1,19 +1,108 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>RESET Capital</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/responsive.css">
-    </head>
-    <body>
-      
-        <p>Hi</p>
-        
-        <script src="./js/main.js" async defer></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RESET Capital</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="./assets/images/icons/logo.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Vendors -->
+    <link rel="stylesheet" href="./vendors/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./vendors/hover.css/hover.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <img src="./assets/images/icons/logo.png" alt="">
+        <div class="logo-text">
+            <h1>RESET</h1>
+            <div></div>
+            <h2>CAPITAL</h2>
+        </div>
+        <i class="far fa-bars" onclick="openNav()"></i>
+    </nav>
+
+    <div class="navbar-overlay">
+        <i class="far fa-times navbar-close" onclick="closeNav()"></i>
+
+        <div class="navbar-overlay-line"></div>
+        <div class="navbar-overlay-line"></div>
+
+        <div class="navbar-orange-line"></div>
+        <div class="navbar-orange-line"></div>
+
+        <img class="navbar-overlay-logo" src="./assets/images/icons/logo-big.png" alt="">
+
+        <h1 class="navbar-overlay-heading">RESET</h1>
+
+        <div class="navbar-overlay-menu">
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./investments.html">Investments</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Home Landing Section -->
+
+    <section class="landing-section">
+        <video autoplay muted id="myVideo">
+            <source src="./assets/videos/Transition - 23325.mp4" type="video/mp4">
+        </video>
+        <h1>You don't have<br> to go at it on<br> <span>your own</span> </h1>
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about-section">
+        <div>
+            <div>
+                <h1>ABO <br> UT</h1>
+            </div>
+            <div>
+                <p>
+                    <span>Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in
+                        BEE companies that are created as a result of the Africaneur IQ (AIQ) RESET Model of Economic
+                        Transformation. <br><br> RESET stands for Rapid Equitable Sustainable Economic Transformation
+                        and is a proprietary model used by AIQ to facilitate economic transformation in South Africa
+                        under the Broad Based Black Economic Empowerment Legislation.</span> <br> <br>
+                    <span class="orange-div-line"></span>
+                    The Beneficiary Companies in the RESET Model undergo rapid expansion and growth, typically
+                    underpinned by three to five year offtake contracts and concessionary funding with the sole
+                    objective of increasing market share and taking a significant position in its particular sector RC
+                    will provide a dedicated mechanism for the natural exit of the Capacity Accelerators out of RESET
+                    Beneficiary Companies and also for provide ad hoc financial support to Beneficiary companies as and
+                    when required RC will provide equity and debt solutions to RESET Beneficiary Companies Through this
+                    document, RC seeks to raise R1bn in debt finance (R200m per Financial Services top 5) to fund its
+                    debt and equity investments in RESET Beneficiary Companies in compliance with FS600.
+                </p>
+            </div>
+        </div>
+        <div class="black-line"></div>
+        <div class="black-line"></div>
+    </section>
+
+
+
+    <script src="./vendors/jquery/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
