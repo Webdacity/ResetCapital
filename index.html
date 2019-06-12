@@ -7,9 +7,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in BEE companies created through the AfricaneurIQ (AIQ) Economic Model.">
+    <meta name="description"
+        content="Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in BEE companies created through the AfricaneurIQ (AIQ) Economic Model.">
     <meta name="author" content="Webdacity">
-    <meta name="keywords" content="RESET, reset, capital, venture capital, economic transformation, transformation, BEE, BBEEE, black, white, investment, opportunities, investment firm, africa, south africa, african, africaneur, AfricaneurIQ">
+    <meta name="keywords"
+        content="RESET, reset, capital, venture capital, economic transformation, transformation, BEE, BBEEE, black, white, investment, opportunities, investment firm, africa, south africa, african, africaneur, AfricaneurIQ">
 
     <link rel="icon" type="image/png" href="./assets/images/icons/logo.png">
 
@@ -27,6 +29,9 @@
 
 <body>
 
+    <div class="page-loader">
+        <!-- <img src="./assets/images/icons/gig.gif" alt=""> -->
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
@@ -70,7 +75,7 @@
 
     <!-- Home Landing Section -->
 
-    <section class="landing-section">
+    <section class="landing-section" id="home">
         <!-- <video autoplay muted id="myVideo">
             <source src="./assets/videos/Transition - 23325.mp4" type="video/mp4">
         </video> -->
@@ -136,11 +141,11 @@
         <div class="black-line"></div>
         <div class="black-line"></div>
 
-        <div class="black-divider-line"></div>
+        <div class="black-divider-line" id="team"></div>
         <div class="orange-running-line"></div>
         <h1>Team</h1>
 
-        <div class="team-grid" id="team">
+        <div class="team-grid">
             <div class="team-member" id="team-bruce">
                 <div>
                     <div>
@@ -240,13 +245,28 @@
                 </div>
                 <div class="orange-line"></div>
                 <div class="contact-form">
-                    <form class="gform" method="POST"
-                        action="https://script.google.com/macros/s/AKfycbzHVRvXcCMu1qyhOWapv7lCzwbY9eiPChA8i9LQ/exec">
-                        <input type="text" placeholder="NAME*" name="name" required>
-                        <input type="email" placeholder="EMAIL*" name="email" required>
-                        <input type="phone" placeholder="PHONE*" name="phone" required>
-                        <input type="text" placeholder="COMPANY" name="company">
-                        <textarea name="message" placeholder="TELL US HOW WE CAN HELP*" rows="4" required></textarea>
+                    <form class="gform" method="POST">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input type="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="company">Company:</label>
+                            <input type="text" name="company">
+                        </div>
+                        <div class="textarea">
+                            <label for="message">Message:</label>
+                            <textarea name="message" rows="4"
+                                required></textarea>
+                        </div>
                         <button type="submit">
                             SEND
                         </button>
@@ -261,10 +281,28 @@
         <div class="black-line"></div>
     </section>
 
+    <footer>
+        <img src="./assets/images/icons/full-logo.png" alt="">
+        <div class="footer-nav">
+            <a href="./index.html" id="footer-nav-home">Home</a>
+            <a href="./index.html#about" id="footer-nav-about">About</a>
+            <a href="./index.html#team" id="footer-nav-team">Team</a>
+            <a href="./index.html#investments" id="footer-nav-invest">Investments</a>
+            <a href="./index.html#funders" id="footer-nav-funders">Funders</a>
+            <a href="./index.html#contact" id="footer-nav-contact">Contact</a>
+        </div>
+        <div class="orange-divider-line"></div>
+        <div class="footer-copy">
+            <p>Copyright Ⓒ RESET Capital - 2019</p>
+            <p>Powered by <a href="http://www.webdacity.co.za/" target="blank"> Webdacity</a></p>
+        </div>
+    </footer>
+
 
 
     <script src="./vendors/jquery/jquery-3.3.1.js"></script>
     <script src="./vendors/owl-carousel/owl.carousel.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/main.js"></script>
 </body>
 
