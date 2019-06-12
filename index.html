@@ -16,6 +16,7 @@
     <!-- Vendors -->
     <link rel="stylesheet" href="./vendors/font-awesome/css/all.css">
     <link rel="stylesheet" href="./vendors/hover.css/hover.css">
+    <link rel="stylesheet" href="./vendors/owl-carousel/owl.carousel.css">
 </head>
 
 <body>
@@ -67,7 +68,20 @@
         <!-- <video autoplay muted id="myVideo">
             <source src="./assets/videos/Transition - 23325.mp4" type="video/mp4">
         </video> -->
-        <h1>You don't have<br> to go at it on<br> <span>your own</span> </h1>
+        <div class="owl-carousel owl-theme" onload="play()">
+            <div class="slide" id="slide1">
+                <h1>You don't have<br> to go at it on<br> <span>your own</span> </h1>
+            </div>
+            <div class="slide" id="slide2">
+                <h1>We are here to<br><span>help you grow</span><br> every step of<br>the way </h1>
+            </div>
+            <div class="slide" id="slide3">
+                <h1>We provide a<br><span>unique focus</span><br>on investment <br>opportunities</h1>
+            </div>
+            <div class="slide" id="slide4">
+                <h1>Prepare to undergo<br> <span>expansion and<br>growth</span> </h1>
+            </div>
+        </div>
     </section>
 
 
@@ -244,6 +258,7 @@
 
 
     <script src="./vendors/jquery/jquery-3.3.1.js"></script>
+    <script src="./vendors/owl-carousel/owl.carousel.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

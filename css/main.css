@@ -286,12 +286,8 @@ section {
 /* Home Landing Section */
 
 .landing-section {
-    background-position: center;
-    background-size: cover;
     height: 100vh;
-    background-image: url("../assets/images/backgrounds/home-landing-section.jpg");
     overflow: hidden;
-    background-attachment: fixed;
 }
 
 #myVideo {
@@ -304,29 +300,77 @@ section {
     overflow: hidden;
 }
 
-.landing-section h1 {
-    text-align: right;
+
+.landing-section .owl-carousel {
+    height: 100vh;
+    width: 100vw;
+}
+
+.owl-carousel .slide {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide h1 {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10%;
     font-weight: 300;
     font-size: 45px;
     text-transform: uppercase;
 }
 
-.landing-section h1 span {
+.slide h1 span {
     font-size: 50px;
     color: var(--orange);
     font-weight: 400;
 }
+
+#slide1 h1, #slide3 h1 {
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+#slide2 h1, #slide4 h1 {
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+#slide1 {
+    background-image: url("../assets/images/slides/slide1.jpg");
+}
+
+#slide2 {
+    background-image: url("../assets/images/slides/slide2.jpg");
+}
+
+#slide3  {
+    background-image: url("../assets/images/slides/slide3.jpg");
+}
+
+#slide4  {
+    background-image: url("../assets/images/slides/slide4.jpg");
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* About Section */
 
 .about-section {
-    /* height: 100vh; */
     background-color: white;
     background-attachment: fixed;
     position: relative;
