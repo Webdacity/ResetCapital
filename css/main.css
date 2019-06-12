@@ -48,7 +48,7 @@ section {
 
 /* Page Loader */
 
-.page-loader {
+.loader {
     position: fixed;;
     top: 0;
     left: 0;
@@ -57,22 +57,54 @@ section {
     background-color: white;
     z-index: 40;
     text-align: center;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.page-loader img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: pageLoader 2.5s ease infinite;
+.loader img {
+    position: absolute;
+    width: 10%;
 }
 
-@keyframes pageLoader {
+.loader-img1 {
+    animation: loaderImg1 5s ease-in-out infinite;
+}
+
+@keyframes loaderImg1 {
     0% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(540deg);
+    20% {
+        transform: rotate(-180deg);
+    }
+    40% {
+        transform: rotate(360deg);
+    }
+    70% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.loader-img2 {
+    animation: loaderImg2 5s ease-in-out infinite;
+}
+
+@keyframes loaderImg2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(180deg);
+    }
+    40% {
+        transform: rotate(-360deg);
+    }
+    70% {
+        transform: rotate(360deg);
     }
     100% {
         transform: rotate(0deg);

@@ -1,8 +1,8 @@
 // Page Loader
 
-// setTimeout (function() {
-//   $(".page-loader").fadeOut("2000");
-// }, 5000);
+setTimeout (function() {
+  $(".loader").fadeOut("2000");
+}, 5000);
 
 
 // Navbar
@@ -58,10 +58,12 @@ $('.owl-carousel').owlCarousel({
   smartSpeed: 1500
 });
 
-
-setInterval(() => {
-  owl.trigger('next.owl.carousel');
+setTimeout(()=> {
+  setInterval(() => {
+    owl.trigger('next.owl.carousel');
+  }, 6000);
 }, 6000);
+
 
 
 
@@ -97,13 +99,15 @@ ScrollReveal().reveal('.contact-section .black-line:nth-child(2)', {
 });
 
 ScrollReveal().reveal('.owl-carousel', {
-  duration: 2500
+  duration: 2500,
+  delay: 5000
 });
 
 ScrollReveal().reveal('.navbar', {
   duration: 2500,
   distance: "400px",
   origin: "top",
+  delay: 5000
 });
 
 ScrollReveal().reveal('.about-section-heading, .funders-section-heading', {
