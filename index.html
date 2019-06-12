@@ -47,10 +47,12 @@
 
         <div class="navbar-overlay-menu">
             <div>
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./investments.html">Investments</a>
-                <a href="./contact.html">Contact</a>
+                <a onclick="closeNav()" href="./index.html">Home</a>
+                <a onclick="closeNav()" href="./index.html#about">About</a>
+                <a onclick="closeNav()" href="./index.html#team">Team</a>
+                <a onclick="closeNav()" href="./index.html#investments">Investments</a>
+                <a onclick="closeNav()" href="./index.html#funders">Funders</a>
+                <a onclick="closeNav()" href="./index.html#contact">Contact</a>
             </div>
 
         </div>
@@ -62,37 +64,177 @@
     <!-- Home Landing Section -->
 
     <section class="landing-section">
-        <video autoplay muted id="myVideo">
+        <!-- <video autoplay muted id="myVideo">
             <source src="./assets/videos/Transition - 23325.mp4" type="video/mp4">
-        </video>
+        </video> -->
         <h1>You don't have<br> to go at it on<br> <span>your own</span> </h1>
     </section>
 
 
     <!-- About Section -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div>
-            <div>
-                <h1>ABO <br> UT</h1>
+            <div class="about-section-heading">
+                <h1>ABO<br> UT</h1>
             </div>
             <div>
-                <p>
-                    <span>Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in
-                        BEE companies that are created as a result of the Africaneur IQ (AIQ) RESET Model of Economic
-                        Transformation. <br><br> RESET stands for Rapid Equitable Sustainable Economic Transformation
-                        and is a proprietary model used by AIQ to facilitate economic transformation in South Africa
-                        under the Broad Based Black Economic Empowerment Legislation.</span> <br> <br>
-                    <span class="orange-div-line"></span>
-                    The Beneficiary Companies in the RESET Model undergo rapid expansion and growth, typically
-                    underpinned by three to five year offtake contracts and concessionary funding with the sole
-                    objective of increasing market share and taking a significant position in its particular sector RC
-                    will provide a dedicated mechanism for the natural exit of the Capacity Accelerators out of RESET
-                    Beneficiary Companies and also for provide ad hoc financial support to Beneficiary companies as and
-                    when required RC will provide equity and debt solutions to RESET Beneficiary Companies Through this
-                    document, RC seeks to raise R1bn in debt finance (R200m per Financial Services top 5) to fund its
-                    debt and equity investments in RESET Beneficiary Companies in compliance with FS600.
+                <div class="about-text">
+                    <p>
+                        <span>
+                            Reset Capital (RC) is an investment firm with a unique focus on investment opportunities
+                            in
+                            BEE companies that are created as a result of the Africaneur IQ (AIQ) RESET Model of
+                            Economic
+                            Transformation. <br><br> RESET stands for Rapid Equitable Sustainable Economic
+                            Transformation
+                            and is a proprietary model used by AIQ to facilitate economic transformation in South Africa
+                            under the Broad Based Black Economic Empowerment Legislation.
+                        </span>
+                        <br> <br>
+                    </p>
+                    <div class="orange-line"></div>
+                    <br>
+                    <p>
+                        The Beneficiary Companies in the RESET Model undergo rapid expansion and growth, typically
+                        underpinned by three to five year offtake contracts and concessionary funding with the sole
+                        objective of increasing market share and taking a significant position in its particular sector
+                        RC
+                        will provide a dedicated mechanism for the natural exit of the Capacity Accelerators out of
+                        RESET
+                        Beneficiary Companies and also for provide ad hoc financial support to Beneficiary companies as
+                        and
+                        when required RC will provide equity and debt solutions to RESET Beneficiary Companies Through
+                        this
+                        document, RC seeks to raise R1bn in debt finance (R200m per Financial Services top 5) to fund
+                        its
+                        debt and equity investments in RESET Beneficiary Companies in compliance with FS600.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="black-line"></div>
+        <div class="black-line"></div>
+
+        <div class="black-divider-line"></div>
+        <div class="orange-running-line"></div>
+        <h1>Team</h1>
+
+        <div class="team-grid" id="team">
+            <div class="team-member" id="team-bruce">
+                <div>
+                    <div>
+                        <h3>Bruce Mthobisi Nhleko</h3>
+                        <h4>Beneficiary</h4>
+                    </div>
+                    <img src="./assets/images/team/Bruce.jpg" alt="">
+                </div>
+                <div class="orange-divider-line"></div>
+                <p>Mr. Glynn Robert Burger served as Group Risk and Finance Director at Investec Group until March 31,
+                    2019. He also served as Joint Head of South Africa, Global Head of Specialist Banking and Global
+                    Head of Risk Management at Investec Plc. He joined Investec Limited in 1980 and served as the Chief
+                    Accounting Officer, Group Risk Manager and Joint Managing Director for South Africa. He served as an
+                    Executive Director of Investec Limited since July 3, 2002 until March 31, 2019. He served as an
+                    Executive Director of Investec Bank Limited since June 30, 1990 until December 12, 2018. He served
+                    as an Executive Director of Investec Limited since July 3, 2002 until March 31, 2019. He is a
+                    Director of Saambou Holdings Ltd. since August 16, 2001. He serves as a Director of Investec
+                    Holdings Limited, Investec Finance plc and Investec Property Group Ltd. He served as Director of
+                    Investec Private Equity Management (Ireland) Limited</p>
+            </div>
+            <div class="team-member">
+                <div>
+                    <img src="./assets/images/team/Glynn.jpg" alt="">
+                    <div>
+                        <h3>Glynn Robert Burger</h3>
+                        <h4>Capacity Accelerator</h4>
+                    </div>
+                </div>
+                <div class="orange-divider-line"></div>
+                <p>Mr. Glynn Robert Burger served as Group Risk and Finance Director at Investec Group until March 31,
+                    2019. He also served as Joint Head of South Africa, Global Head of Specialist Banking and Global
+                    Head of Risk Management at Investec Plc. He joined Investec Limited in 1980 and served as the Chief
+                    Accounting Officer, Group Risk Manager and Joint Managing Director for South Africa. He served as an
+                    Executive Director of Investec Limited since July 3, 2002 until March 31, 2019. He served as an
+                    Executive Director of Investec Bank Limited since June 30, 1990 until December 12, 2018. He served
+                    as an Executive Director of Investec Limited since July 3, 2002 until March 31, 2019. He is a
+                    Director of Saambou Holdings Ltd. since August 16, 2001. He serves as a Director of Investec
+                    Holdings Limited, Investec Finance plc and Investec Property Group Ltd. He served as Director of
+                    Investec Private Equity Management (Ireland) Limited
                 </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Investments Section -->
+
+    <section class="investments-section" id="investments">
+        <div>
+            <div></div>
+            <div class="investments-section-heading">
+                <h1>INVEST<br>MENTS</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Funders Section -->
+
+    <section class="funders-section" id="funders">
+        <div>
+            <div class="funders-section-heading">
+                <h1>FUND<br>ERS</h1>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section class="contact-section" id="contact">
+        <div>
+            <div>
+                <div class="contact-details">
+                    <a href="tel:+27 010 822 6530">
+                        <i class="far fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>+27 010 822 6530</p>
+                    </a>
+                    <a href="mailto:info@resetcapital.co.za">
+                        <i class="far fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@resetcapital.co.za</p>
+                    </a>
+                    <a href="https://goo.gl/maps/BeKBwJskaNSEJCxX8" target="blank">
+                        <i class="far fa-map-marker-alt"></i>
+                        <h3>Find Us</h3>
+                        <p>
+                            2nd Floor, Block E,
+                            34 Whitely Road, Melrose Arch,
+                            Johannesburg</p>
+                    </a>
+                </div>
+                <div class="orange-line"></div>
+                <div class="contact-form">
+                    <form class="gform" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbzHVRvXcCMu1qyhOWapv7lCzwbY9eiPChA8i9LQ/exec">
+                        <input type="text" placeholder="NAME*" name="name" required>
+                        <input type="email" placeholder="EMAIL*" name="email" required>
+                        <input type="phone" placeholder="PHONE*" name="phone" required>
+                        <input type="text" placeholder="COMPANY" name="company">
+                        <textarea name="message" placeholder="TELL US HOW WE CAN HELP*" rows="4" required></textarea>
+                        <button type="submit">
+                            SEND
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-section-heading">
+                <h1>CONT<br>ACT</h1>
             </div>
         </div>
         <div class="black-line"></div>
