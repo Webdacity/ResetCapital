@@ -16,8 +16,11 @@ html {
     width: 100%;
     font-family: "Exo";
     font-weight: 400;
-    /* overflow-x: hidden; */
     scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
 }
 
 section {
@@ -49,7 +52,7 @@ section {
 /* Page Loader */
 
 .loader {
-    position: fixed;;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -60,6 +63,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: none; */
 }
 
 .loader img {
@@ -75,15 +79,19 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     20% {
         transform: rotate(-180deg);
     }
+
     40% {
         transform: rotate(360deg);
     }
+
     70% {
         transform: rotate(-360deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -97,15 +105,19 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     20% {
         transform: rotate(180deg);
     }
+
     40% {
         transform: rotate(-360deg);
     }
+
     70% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -167,7 +179,7 @@ section {
 
 
 .logo-text h1 {
-    color: var(--orange);
+    color: black;
     font-family: "Expletus Sans";
     font-weight: 500;
     font-size: 32px;
@@ -179,6 +191,7 @@ section {
     font-weight: 400;
     font-size: 20px;
     margin: 0;
+    color: var(--orange)
 }
 
 .navbar-overlay {
@@ -281,7 +294,7 @@ section {
 .navbar-overlay-heading {
     text-align: center;
     opacity: 0;
-    font-family: "Exo";
+    font-family: "Expletus Sans";
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 40px;
@@ -388,14 +401,16 @@ section {
     font-weight: 400;
 }
 
-#slide1 h1, #slide3 h1 {
+#slide1 h1,
+#slide3 h1 {
     text-align: right;
     top: 50%;
     transform: translateY(-50%);
     right: 10%;
 }
 
-#slide2 h1, #slide4 h1 {
+#slide2 h1,
+#slide4 h1 {
     text-align: left;
     top: 50%;
     transform: translateY(-50%);
@@ -410,11 +425,11 @@ section {
     background-image: url("../assets/images/slides/slide2.jpg");
 }
 
-#slide3  {
+#slide3 {
     background-image: url("../assets/images/slides/slide3.jpg");
 }
 
-#slide4  {
+#slide4 {
     background-image: url("../assets/images/slides/slide4.jpg");
 }
 
@@ -453,7 +468,7 @@ section {
     align-items: center;
 }
 
-.about-section-heading h1{
+.about-section-heading h1 {
     text-align: right;
     font-weight: 700;
     font-family: "Expletus Sans";
@@ -468,6 +483,10 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.about-text p:nth-child(4) {
+    line-height: 1.4;
 }
 
 .orange-line {
@@ -507,11 +526,10 @@ section {
 
 .about-section .orange-running-line+h1 {
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Expletus Sans";
-    font-size: 90px;
+    font-size: 70px;
     border-right: 2px solid black;
-    padding-right: 50px;
 }
 
 .team-grid {
@@ -611,6 +629,9 @@ section {
 }
 
 
+
+
+
 /* Contact Section */
 
 .contact-section {
@@ -623,10 +644,10 @@ section {
     display: grid;
     grid-template-columns: 70% 30%;
     height: 100%;
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
-.contact-section-heading  {
+.contact-section-heading {
     text-align: right;
     display: flex;
     justify-content: flex-start;
@@ -750,7 +771,7 @@ textarea {
     color: white;
 }
 
-form > div {
+form>div {
     display: flex;
     flex-direction: column;
 }
@@ -768,32 +789,33 @@ form label {
 }
 
 .contact-section .black-line:nth-child(2) {
-    top: 10%;
+    top: 8%;
     right: 0;
 }
 
 .contact-section .black-line:nth-child(3) {
     left: 0;
-    top: 90%;
+    top: 92%;
 }
 
 
 /* Investments Section */
 
 .investments-section {
-    height: 100vh;
     background-color: white;
     /* background-attachment: fixed; */
     position: relative;
+    padding: 3% 0;
 }
 
-.investments-section>div {
+.investments-section>div:nth-child(1) {
     display: grid;
     grid-template-columns: 70% 30%;
     height: 100%;
+    
 }
 
-.investments-section-heading  {
+.investments-section-heading {
     text-align: right;
     display: flex;
     justify-content: flex-start;
@@ -809,12 +831,91 @@ form label {
     padding-left: 50px;
 }
 
-.contact-section>div>div:nth-child(1) {
-    padding: 5% 10% 5% 5%;
+.investments-text {
+    padding: 5% 5% 5% 10%;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    text-align: right
 }
+
+
+.investments-text p:nth-child(5) {
+    line-height: 1.4;
+}
+
+.orange-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--orange);
+}
+
+.investments-text>p:nth-child(1) {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.invest-running-line {
+    position: relative;
+    height: 5px;
+    width: 25%;
+    background-color: var(--orange);
+    animation: investLine 5s ease-in-out infinite;
+}
+
+@keyframes investLine {
+    0% {
+        left: -25%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -25%;
+    }
+}
+
+.investments-section > h1 {
+    text-align: center;
+    font-weight: 600;
+    font-family: "Expletus Sans";
+    font-size: 70px;
+    border-right: 2px solid black;
+}
+
+.investment-focus {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding:  0 5% 5% 5%;
+}
+
+.investment-focus > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.investment-focus >div:nth-child(1) {
+    padding-right: 30px;
+    border-right: 2px solid black;
+}
+
+.investment-focus >div:nth-child(1) p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.investment-focus >div:nth-child(1) p span{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.investment-focus >div:nth-child(2) {
+    padding-left: 30px;
+    line-height: 1.4;
+}
+
 
 
 
@@ -823,11 +924,14 @@ form label {
 
 /* Funders Section */
 
+.funders-section {
+    padding: 3% 0;
+}
+
 .funders-section>div:nth-child(1) {
     display: grid;
     grid-template-columns: 30% 70%;
     height: 100%;
-    padding: 10% 0;
 }
 
 .funders-section-heading {
@@ -837,7 +941,7 @@ form label {
     align-items: center;
 }
 
-.funders-section-heading h1{
+.funders-section-heading h1 {
     text-align: right;
     font-weight: 700;
     font-family: "Expletus Sans";
@@ -853,6 +957,21 @@ form label {
     justify-content: center;
     flex-direction: column;
 }
+
+.funders-text {
+    padding: 5% 5% 5% 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left
+}
+
+.funders-text>p:nth-child(1) {
+    font-weight: 500;
+    font-size: 20px;
+}
+
 
 
 
@@ -916,3 +1035,34 @@ footer .orange-divider-line {
     background-color: var(--orange);
     margin-bottom: 20px;
 }
+
+/* Paralax */
+
+.parallax-section {
+    height: 40vh;
+    background-image: url("../assets/images/other/paralax.jpg");
+    background-position: left bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    cursor: pointer;
+}
+
+.parallax-section h1 {
+    position: relative;
+    font-weight: 300;
+    font-size: 45px;
+    text-transform: uppercase;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.parallax-section h1 span {
+    font-size: 50px;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+

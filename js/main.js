@@ -1,7 +1,8 @@
 // Page Loader
 
 setTimeout (function() {
-  $(".loader").fadeOut("2000");
+  $(".loader").fadeOut("3000");
+  $("body").css("overflow","unset");
 }, 5000);
 
 
@@ -13,7 +14,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-200px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -66,6 +67,15 @@ setTimeout(()=> {
 
 
 
+// Parallax Smooth Scroll Link
+document.querySelector('.parallax-section').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
+
+
 
 // ScrollReveal Animations 
 
@@ -98,16 +108,11 @@ ScrollReveal().reveal('.contact-section .black-line:nth-child(2)', {
   origin: "left"
 });
 
-ScrollReveal().reveal('.owl-carousel', {
-  duration: 2500,
-  delay: 5000
-});
-
 ScrollReveal().reveal('.navbar', {
   duration: 2500,
   distance: "400px",
   origin: "top",
-  delay: 5000
+  delay: 4000
 });
 
 ScrollReveal().reveal('.about-section-heading, .funders-section-heading', {
