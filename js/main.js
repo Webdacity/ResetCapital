@@ -1,9 +1,9 @@
 // Page Loader
 
-setTimeout (function() {
-  $(".loader").fadeOut("3000");
-  $("body").css("overflow","unset");
-}, 5000);
+// setTimeout (function() {
+//   $(".loader").fadeOut("3000");
+//   $("body").css("overflow","unset");
+// }, 5000);
 
 
 // Navbar
@@ -115,7 +115,7 @@ ScrollReveal().reveal('.navbar', {
   delay: 4000
 });
 
-ScrollReveal().reveal('.about-section-heading, .funders-section-heading', {
+ScrollReveal().reveal('.about-section-heading, .funders-section-heading, .investments-text', {
   duration: 2000,
   distance: "400px",
   origin: "left",
@@ -127,39 +127,39 @@ ScrollReveal().reveal('.investments-section-heading, .contact-section-heading', 
   origin: "right",
 });
 
-ScrollReveal().reveal('.about-text p:nth-child(1)', {
+ScrollReveal().reveal('.about-text p:nth-child(1), .funders-text p:nth-child(1)', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
 });
 
-ScrollReveal().reveal('.about-text div', {
+ScrollReveal().reveal('.about-text div, .funders-text div', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
   delay: 300
 });
 
-ScrollReveal().reveal('.about-text p:nth-child(4)', {
+ScrollReveal().reveal('.about-text p:nth-child(4), .funders-text p:nth-child(5)', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
   delay: 600
 });
 
-ScrollReveal().reveal('.black-divider-line, orange-running-lin, .about-section .orange-running-line+h1', {
+ScrollReveal().reveal('.black-divider-line, .orange-running-line, .about-section .orange-running-line+h1, .investments-section>h1', {
   duration: 2000,
   distance: "200px",
   origin: "bottom",
 });
 
-ScrollReveal().reveal('.team-grid .team-member:nth-child(1)', {
+ScrollReveal().reveal('.team-grid .team-member:nth-child(1), .investment-focus>div:nth-child(1)', {
   duration: 2000,
   distance: "1000px",
   origin: "left",
 });
 
-ScrollReveal().reveal('.team-grid .team-member:nth-child(2)', {
+ScrollReveal().reveal('.team-grid .team-member:nth-child(2), .investment-focus>div:nth-child(2)', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
@@ -184,6 +184,13 @@ ScrollReveal().reveal('.contact-form', {
   origin: "left",
   delay: 600
 });
+
+ScrollReveal().reveal('.parallax-section', {
+  duration: 2000,
+  distance: "500px",
+});
+
+
 
 
 
