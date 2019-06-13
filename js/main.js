@@ -1,9 +1,9 @@
 // Page Loader
 
-// setTimeout (function() {
-//   $(".loader").fadeOut("3000");
-//   $("body").css("overflow","unset");
-// }, 5000);
+setTimeout (function() {
+  $(".loader").fadeOut("3000");
+  $("body").css("overflow","unset");
+}, 5000);
 
 
 // Navbar
