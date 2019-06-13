@@ -147,7 +147,7 @@ ScrollReveal().reveal('.about-text p:nth-child(4), .funders-text p:nth-child(5)'
   delay: 600
 });
 
-ScrollReveal().reveal('.black-divider-line, .orange-running-line, .about-section .orange-running-line+h1, .investments-section>h1', {
+ScrollReveal().reveal('.black-divider-line, .about-section .orange-running-line+h1, .investments-section>h1', {
   duration: 2000,
   distance: "200px",
   origin: "bottom",
