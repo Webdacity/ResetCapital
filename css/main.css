@@ -503,6 +503,19 @@ section {
     grid-template-columns: 70% 30%;
 }
 
+.secondary-heading {
+    text-align: center;
+    font-weight: 600;
+    font-family: "Expletus Sans";
+    font-size: 3.5vw;
+    border-bottom: 3px solid var(--orange);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    padding-top: 50px;
+}
+
 
 
 
@@ -553,18 +566,6 @@ section {
     margin: auto;
     background-color: black;
     margin-bottom: 0px;
-}
-
-.team-heading {
-    text-align: center;
-    font-weight: 600;
-    font-family: "Expletus Sans";
-    font-size: 3.5vw;
-    border-bottom: 3px solid var(--orange);
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) !important;
 }
 
 .team-grid {
@@ -862,19 +863,6 @@ form label {
     100% {
         left: -25%;
     }
-}
-
-.invest-focus-heading {
-    text-align: center;
-    font-weight: 600;
-    font-family: "Expletus Sans";
-    font-size: 3.5vw;
-    border-bottom: 3px solid var(--orange);
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) !important;
-    padding-top: 10%;
 }
 
 .investment-focus {

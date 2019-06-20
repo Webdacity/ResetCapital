@@ -28,6 +28,10 @@
         margin: 0 !important;
     }
 
+    .secondary-heading {
+        font-size: 5vw;
+    }
+
     .section-grid-right {
         grid-template-columns: 80% 20% !important;
     }
@@ -65,7 +69,7 @@
     }
 
     .navbar {
-        padding: 1% 0;
+        padding: 20px 0;
     }
 
     .investment-focus {
@@ -85,6 +89,15 @@
         line-height: 1.4;
     }
 
+
+    .slide h1 {
+        font-size: 30px;
+    }
+
+    .slide h1 span {
+        font-size: 35px;
+    }
+
 }
 
 
@@ -97,6 +110,26 @@
         font-size: 14px;
     }
 
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .navbar img {
+        width: 10%;
+    }
+
+    .logo-text h1 {
+        font-size: 26px;
+    }
+
+    .logo-text h2 {
+        font-size: 18px;
+    }
+
+    .navbar i {
+        font-size: 28px;
+    }
+
     .section-grid {
         grid-template-columns: 1fr !important;
     }
@@ -107,6 +140,10 @@
         padding: 0 !important;
         margin: 0 !important;
         border-bottom: 2px solid var(--orange);
+    }
+
+    .secondary-heading {
+        font-size: 9vw;
     }
 
     .section-heading {
@@ -142,9 +179,8 @@
         grid-template-columns: 1fr;
     }
 
-    .textarea, .contact-form button  {
+    .textarea,
+    .contact-form button {
         grid-column: unset
     }
-
-    
 }
