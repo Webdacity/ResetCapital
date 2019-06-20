@@ -115,32 +115,32 @@ ScrollReveal().reveal('.navbar', {
   delay: 4000
 });
 
-ScrollReveal().reveal('.about-section-heading, .funders-section-heading, .investments-text', {
+ScrollReveal().reveal('.section-heading-left, .investments-section .section-text', {
   duration: 2000,
   distance: "400px",
   origin: "left",
 });
 
-ScrollReveal().reveal('.investments-section-heading, .contact-section-heading', {
+ScrollReveal().reveal('.section-heading-right', {
   duration: 2000,
   distance: "400px",
   origin: "right",
 });
 
-ScrollReveal().reveal('.about-text p:nth-child(1), .funders-text p:nth-child(1)', {
+ScrollReveal().reveal('.about-section .section-text p:nth-child(1), .funders-section .section-text p:nth-child(1)', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
 });
 
-ScrollReveal().reveal('.about-text div, .funders-text div', {
+ScrollReveal().reveal('.about-section .section-text div, .funders-section .section-text div', {
   duration: 2000,
   distance: "1000px",
   origin: "right",
   delay: 300
 });
 
-ScrollReveal().reveal('.about-text p:nth-child(4), .funders-text p:nth-child(5)', {
+ScrollReveal().reveal('.about-section .section-text p:nth-child(4), .funders-section .section-text p:nth-child(5)', {
   duration: 2000,
   distance: "1000px",
   origin: "right",

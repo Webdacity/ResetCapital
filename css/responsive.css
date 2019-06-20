@@ -1,0 +1,150 @@
+@media screen and (max-width: 1200px) {
+    .navbar-overlay-logo {
+        height: 80vh;
+    }
+
+
+    section {
+        padding: 10% 0;
+    }
+
+    .landing-section {
+        padding-top: 0;
+    }
+
+}
+
+
+
+
+/* 991px */
+
+
+@media screen and (max-width: 991px) {
+    .section-heading h1 {
+        transform: rotate(-90deg);
+        font-size: 6vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .section-grid-right {
+        grid-template-columns: 80% 20% !important;
+    }
+
+    .section-grid-left {
+        grid-template-columns: 20% 80% !important;
+    }
+
+    .section-heading {
+        justify-content: center;
+    }
+
+    .black-line {
+        display: none;
+    }
+
+    .parallax-section {
+        background-position: center bottom;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width:761px) {
+    .section-grid-right {
+        grid-template-columns: 85% 15% !important;
+    }
+
+    .section-grid-left {
+        grid-template-columns: 15% 85% !important;
+    }
+
+    .navbar {
+        padding: 1% 0;
+    }
+
+    .investment-focus {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 5% 5% 5%;
+        text-align: center;
+    }
+
+    .investment-focus>div:nth-child(1) {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .investment-focus>div:nth-child(2) {
+        padding-left: 0px;
+        line-height: 1.4;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .footer-nav a {
+        margin: 0 10px;
+    }
+
+    .footer-copy {
+        font-size: 14px;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .section-heading h1 {
+        transform: rotate(0deg);
+        font-size: 10vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border-bottom: 2px solid var(--orange);
+    }
+
+    .section-heading {
+        grid-area: 1/1/2/2;
+    }
+
+
+    .section-text {
+        padding: none !important;
+        border: none;
+    }
+
+    .section-text-right,
+    .section-text-left {
+        padding: 5%;
+    }
+
+    .team-grid .team-member:nth-child(1) {
+        border: none;
+    }
+
+    .contact-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-column-gap: 2%;
+        padding-bottom: 30px;
+    }
+
+
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .textarea, .contact-form button  {
+        grid-column: unset
+    }
+
+    
+}
