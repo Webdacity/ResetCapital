@@ -1,10 +1,41 @@
 // Page Loader
 
-setTimeout (function() {
-  $(".loader").fadeOut("3000");
-  $("body").css("overflow","unset");
-}, 5000);
+// setTimeout (function() {
+//   $(".loader").fadeOut("3000");
+//   $("body").css("overflow","unset");
+// }, 5000);
 
+window.onload = (event) => {
+  $(".loader").fadeOut("3000");
+  $("body").css("overflow", "unset");
+
+  // Fire on Load
+  ScrollReveal().reveal('.navbar', {
+    duration: 1500,
+    distance: "400px",
+    origin: "top",
+  });
+
+  // Home Page Owl Carousel
+  var owl = $('.owl-carousel');
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 1,
+    items: 1,
+    autoplay: true,
+    slideTransition: "ease",
+    smartSpeed: 1500
+  });
+
+  setTimeout(() => {
+    setInterval(() => {
+      owl.trigger('next.owl.carousel');
+    }, 6000);
+  }, 6000);
+
+
+
+};
 
 // Navbar
 
@@ -47,31 +78,11 @@ function closeNav() {
 }
 
 
-
-// Home Page Owl Carousel
-var owl = $('.owl-carousel');
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 1,
-  items: 1,
-  autoplay: true,
-  slideTransition: "ease",
-  smartSpeed: 1500
-});
-
-setTimeout(()=> {
-  setInterval(() => {
-    owl.trigger('next.owl.carousel');
-  }, 6000);
-}, 6000);
-
-
-
 // Parallax Smooth Scroll Link
 document.querySelector('.parallax-section').addEventListener('click', function (e) {
   e.preventDefault();
   document.querySelector('#contact').scrollIntoView({
-      behavior: 'smooth'
+    behavior: 'smooth'
   });
 });
 
@@ -108,14 +119,7 @@ ScrollReveal().reveal('.contact-section .black-line:nth-child(2)', {
   origin: "left"
 });
 
-ScrollReveal().reveal('.navbar', {
-  duration: 2500,
-  distance: "400px",
-  origin: "top",
-  delay: 4000
-});
-
-ScrollReveal().reveal('.section-heading-left, .investments-section .section-text', {
+ScrollReveal().reveal('.section-heading-left', {
   duration: 2000,
   distance: "400px",
   origin: "left",
@@ -127,48 +131,10 @@ ScrollReveal().reveal('.section-heading-right', {
   origin: "right",
 });
 
-ScrollReveal().reveal('.about-section .section-text p:nth-child(1), .funders-section .section-text p:nth-child(1)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "right",
-});
-
-ScrollReveal().reveal('.about-section .section-text div, .funders-section .section-text div', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "right",
-  delay: 300
-});
-
-ScrollReveal().reveal('.about-section .section-text p:nth-child(4), .funders-section .section-text p:nth-child(5)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "right",
-  delay: 600
-});
-
 ScrollReveal().reveal('.black-divider-line, .about-section .orange-running-line+h1, .investments-section>h1', {
   duration: 2000,
   distance: "200px",
   origin: "bottom",
-});
-
-ScrollReveal().reveal('.team-grid .team-member:nth-child(1), .investment-focus>div:nth-child(1)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left",
-});
-
-ScrollReveal().reveal('.team-grid .team-member:nth-child(2), .investment-focus>div:nth-child(2)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "right",
-});
-
-ScrollReveal().reveal('.contact-details', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left",
 });
 
 ScrollReveal().reveal('.contact-section .orange-line', {
@@ -178,19 +144,8 @@ ScrollReveal().reveal('.contact-section .orange-line', {
   delay: 300
 });
 
-ScrollReveal().reveal('.contact-form', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left",
-  delay: 600
-});
 
 ScrollReveal().reveal('.parallax-section', {
   duration: 2000,
   distance: "500px",
 });
-
-
-
-
-

@@ -1,4 +1,5 @@
-@import "./fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600&display=swap');
 
 /* Variables */
 
@@ -424,19 +425,19 @@ section {
 }
 
 #slide1 {
-    background-image: url("../assets/images/slides/slide1.jpg");
+    background-image: url("../images/slides/slide1.jpg");
 }
 
 #slide2 {
-    background-image: url("../assets/images/slides/slide2.jpg");
+    background-image: url("../images/slides/slide2.jpg");
 }
 
 #slide3 {
-    background-image: url("../assets/images/slides/slide3.jpg");
+    background-image: url("../images/slides/slide3.jpg");
 }
 
 #slide4 {
-    background-image: url("../assets/images/slides/slide4.jpg");
+    background-image: url("../images/slides/slide4.jpg");
 }
 
 
@@ -505,7 +506,7 @@ section {
 
 .secondary-heading {
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     font-family: "Expletus Sans";
     font-size: 3.5vw;
     border-bottom: 3px solid var(--orange);
@@ -541,7 +542,7 @@ section {
 
 .about-section>div>div:nth-child(2) span {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .about-section .black-line {
@@ -579,7 +580,7 @@ section {
 }
 
 .team-grid .team-member:nth-child(1) {
-    border-right: 5px solid black;
+    border-right: 3px solid black;
 }
 
 .team-member>div:nth-child(1) {
@@ -599,7 +600,7 @@ section {
 .team-member h3 {
     font-weight: 700;
     font-family: "Expletus Sans";
-    font-size: 32px;
+    font-size: 1.4rem;
     padding: 0 20px;
     margin: 0;
     letter-spacing: 1px;
@@ -608,7 +609,7 @@ section {
 .team-member h4 {
     font-weight: 500;
     font-family: "Exo";
-    font-size: 26px;
+    font-size: 1.1rem;
     padding-right: 50px;
     padding: 0 20px;
     margin: 0;
@@ -686,7 +687,7 @@ section {
 
 .contact-details i {
     transition: 0.6s;
-    font-size: 30px;
+    font-size: 1.2rem;
 }
 
 .contact-details p {
@@ -697,7 +698,7 @@ section {
 .contact-details h3 {
     font-family: "Expletus Sans";
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
     margin: 15px 0 25px 0;
@@ -840,7 +841,7 @@ form label {
 
 .investments-section .section-text>p:nth-child(1) {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .invest-running-line {
@@ -884,7 +885,7 @@ form label {
 
 .investment-focus>div:nth-child(1) p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .investment-focus>div:nth-child(1) p span {
@@ -912,7 +913,7 @@ form label {
 
 .funders-section .section-text>p:nth-child(1) {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.1rem
 }
 
 
@@ -952,6 +953,7 @@ footer img {
 footer p {
     font-weight: 300;
     margin: 0;
+    font-size: 0.8rem;
 }
 
 .footer-copy {
@@ -983,7 +985,7 @@ footer .orange-divider-line {
 
 .parallax-section {
     height: 40vh;
-    background-image: url("../assets/images/other/paralax.jpg");
+    background-image: url("../images/other/paralax.jpg");
     background-position: left bottom;
     background-size: cover;
     background-attachment: fixed;
