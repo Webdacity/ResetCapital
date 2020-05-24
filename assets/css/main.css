@@ -637,8 +637,12 @@ section {
 
 .team-member p {
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.4;
     letter-spacing: 0.25px;
+}
+
+.team-member span {
+    font-weight: 500;
 }
 
 .orange-running-line {
