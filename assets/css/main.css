@@ -578,10 +578,6 @@ section {
     padding: 1% 5% 5% 5%;
 }
 
-.team-grid .team-member:nth-child(1) {
-    border-right: 3px solid black;
-}
-
 .team-member>div:nth-child(1) {
     display: flex;
     align-items: center;
