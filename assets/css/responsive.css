@@ -4,9 +4,6 @@
     }
 
 
-    section {
-        padding: 10% 0;
-    }
 
     .landing-section {
         padding-top: 0;
@@ -152,13 +149,7 @@
 
 
     .section-text {
-        padding: none !important;
         border: none;
-    }
-
-    .section-text-right,
-    .section-text-left {
-        padding: 5%;
     }
 
     .team-grid .team-member:nth-child(1) {

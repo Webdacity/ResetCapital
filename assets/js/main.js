@@ -7,31 +7,24 @@
 
 window.onload = (event) => {
   $(".loader").fadeOut("3000");
-  $("body").css("overflow", "unset");
 
-  // Fire on Load
-  ScrollReveal().reveal('.navbar', {
-    duration: 1500,
-    distance: "400px",
-    origin: "top",
-  });
 
   // Home Page Owl Carousel
-  var owl = $('.owl-carousel');
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 1,
-    items: 1,
-    autoplay: true,
-    slideTransition: "ease",
-    smartSpeed: 1500
-  });
+  // var owl = $('.owl-carousel');
+  // $('.owl-carousel').owlCarousel({
+  //   loop: true,
+  //   margin: 1,
+  //   items: 1,
+  //   autoplay: true,
+  //   slideTransition: "ease",
+  //   smartSpeed: 2000
+  // });
 
-  setTimeout(() => {
-    setInterval(() => {
-      owl.trigger('next.owl.carousel');
-    }, 6000);
-  }, 6000);
+  // setTimeout(() => {
+  //   setInterval(() => {
+  //     owl.trigger('next.owl.carousel');
+  //   }, 8000);
+  // }, 6000);
 
 
 
@@ -84,68 +77,4 @@ document.querySelector('.parallax-section').addEventListener('click', function (
   document.querySelector('#contact').scrollIntoView({
     behavior: 'smooth'
   });
-});
-
-
-
-// ScrollReveal Animations 
-
-window.sr = ScrollReveal({
-  reset: false,
-  mobile: true
-});
-
-ScrollReveal().reveal('.about-section .black-line:nth-child(2)', {
-  duration: 1500,
-  distance: "1000px",
-  origin: "right"
-});
-
-ScrollReveal().reveal('.about-section .black-line:nth-child(3)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left"
-});
-
-ScrollReveal().reveal('.contact-section .black-line:nth-child(3)', {
-  duration: 1500,
-  distance: "1000px",
-  origin: "right"
-});
-
-ScrollReveal().reveal('.contact-section .black-line:nth-child(2)', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left"
-});
-
-ScrollReveal().reveal('.section-heading-left', {
-  duration: 2000,
-  distance: "400px",
-  origin: "left",
-});
-
-ScrollReveal().reveal('.section-heading-right', {
-  duration: 2000,
-  distance: "400px",
-  origin: "right",
-});
-
-ScrollReveal().reveal('.black-divider-line, .about-section .orange-running-line+h1, .investments-section>h1', {
-  duration: 2000,
-  distance: "200px",
-  origin: "bottom",
-});
-
-ScrollReveal().reveal('.contact-section .orange-line', {
-  duration: 2000,
-  distance: "1000px",
-  origin: "left",
-  delay: 300
-});
-
-
-ScrollReveal().reveal('.parallax-section', {
-  duration: 2000,
-  distance: "500px",
 });
