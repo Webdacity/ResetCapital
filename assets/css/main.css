@@ -26,6 +26,11 @@ body {
 
 section {
     overflow-x: hidden;
+    padding: 4rem 0;
+}
+
+p {
+    font-size: 0.9rem;
 }
 
 
@@ -137,11 +142,12 @@ section {
     top: 0;
     transition: top 0.4s;
     z-index: 10;
+    padding: 0.5rem 0;
 }
 
 .navbar img {
     padding-left: 20px;
-    width: 5%;
+    width: 3rem;
     transition: 1s;
 }
 
@@ -159,6 +165,7 @@ section {
     cursor: pointer;
     padding: 10px;
     transition: 0.2s ease;
+    font-size: 1.25rem;
 }
 
 .navbar i:hover {
@@ -188,14 +195,14 @@ section {
     color: black;
     font-family: "Expletus Sans";
     font-weight: 500;
-    font-size: 32px;
+    font-size: 1.5rem;
     margin: 0;
     letter-spacing: 3px;
 }
 
 .logo-text h2 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0;
     color: var(--orange)
 }
@@ -397,12 +404,12 @@ section {
 .slide h1 {
     position: relative;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 .slide h1 span {
-    font-size: 50px;
+    font-size: 2.25rem;
     color: var(--orange);
     font-weight: 400;
 }
@@ -541,7 +548,7 @@ section {
 
 .about-section>div>div:nth-child(2) span {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .about-section .black-line {
@@ -636,29 +643,6 @@ section {
     font-weight: 500;
 }
 
-.orange-running-line {
-    height: 5px;
-    width: 10%;
-    background-color: var(--orange);
-    animation: teamLine ease 5s infinite;
-    position: relative;
-}
-
-@keyframes teamLine {
-    0% {
-        left: -10%
-    }
-
-    50% {
-        left: 110%;
-    }
-
-    100% {
-        left: -10%;
-    }
-}
-
-
 
 
 
@@ -681,19 +665,20 @@ section {
 
 .contact-details i {
     transition: 0.6s;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact-details p {
     transition: 0.6s;
+    font-size: 0.9rem;
 }
 
 
 .contact-details h3 {
     font-family: "Expletus Sans";
     letter-spacing: 1px;
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 1rem;
     text-transform: uppercase;
     margin: 15px 0 25px 0;
 }
@@ -753,6 +738,7 @@ textarea {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border: 1px solid var(--orange);
+    color: rgb(255, 90, 0);
 }
 
 .contact-form input::placeholder,
@@ -760,6 +746,10 @@ textarea {
     color: rgb(109, 109, 109);
     font-weight: 300;
     text-transform: capitalize;
+}
+
+label {
+    font-size: 0.9rem;
 }
 
 .contact-form button {
@@ -843,7 +833,6 @@ form label {
     height: 5px;
     width: 25%;
     background-color: var(--orange);
-    animation: investLine 5s ease-in-out infinite;
 }
 
 @keyframes investLine {
@@ -879,7 +868,7 @@ form label {
 
 .investment-focus>div:nth-child(1) p {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .investment-focus>div:nth-child(1) p span {
@@ -900,14 +889,10 @@ form label {
 
 /* Funders Section */
 
-.funders-section {
-    padding: 3% 0;
-}
-
 
 .funders-section .section-text>p:nth-child(1) {
     font-weight: 500;
-    font-size: 1.1rem
+    font-size: 1rem;
 }
 
 
@@ -920,6 +905,7 @@ form label {
 footer {
     text-align: center;
     border-top: 1px solid black;
+    padding-top: 1rem;
 }
 
 footer img {
