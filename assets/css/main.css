@@ -404,12 +404,12 @@ p {
 .slide h1 {
     position: relative;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-transform: uppercase;
 }
 
 .slide h1 span {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     color: var(--orange);
     font-weight: 400;
 }
